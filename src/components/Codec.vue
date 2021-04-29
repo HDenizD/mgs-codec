@@ -1,11 +1,22 @@
 <template>
   <div class="codec">
-    Codec
+    <Character />
+    <Character />
   </div>
 </template>
 
 <script>
-export default {}
+import Character from '@/components/Character'
+export default {
+  components: {
+    Character
+  }
+}
 </script>
 
-<style></style>
+<style lang="scss" scoped>
+.codec {
+  background-color: #000000;
+  height: 100%;
+}
+</style>
