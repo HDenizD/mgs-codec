@@ -1,6 +1,6 @@
 <template>
-  <div class="character">
-    Snake
+  <div class="ptt-display">
+    ptt-display
   </div>
 </template>
 
@@ -9,9 +9,9 @@ export default {}
 </script>
 
 <style lang="scss" scoped>
-.character {
+.ptt-display {
+  background-color: #101818;
+  width: 350px;
   height: 250px;
-  width: 150px;
-  background-color: #307850;
 }
 </style>
