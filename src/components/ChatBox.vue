@@ -1,6 +1,6 @@
 <template>
-  <div class="chat-box">
-    chat-box
+  <div class="chat-box ma-16 text-center">
+    La-li-lu-le-NO they don't, Snake.
   </div>
 </template>
 
@@ -10,6 +10,7 @@ export default {}
 
 <style lang="scss" scoped>
 .chat-box {
+  font-size: 24px;
   width: 100%;
 }
 </style>

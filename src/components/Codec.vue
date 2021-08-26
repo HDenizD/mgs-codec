@@ -1,8 +1,8 @@
 <template>
   <div class="codec">
-    <Character />
+    <Character :char-img="campbell" />
     <PttDisplay />
-    <Character />
+    <Character :char-img="snake" />
     <ChatBox />
   </div>
 </template>
@@ -11,11 +11,21 @@
 import Character from '@/components/Character'
 import PttDisplay from '@/components/PttDisplay'
 import ChatBox from '@/components/ChatBox'
+
+import snake from '@/assets/snake.png'
+import campbell from '@/assets/campbell.png'
+
 export default {
   components: {
     Character,
     PttDisplay,
     ChatBox
+  },
+  data() {
+    return {
+      campbell: campbell,
+      snake: snake
+    }
   }
 }
 </script>
@@ -26,8 +36,8 @@ export default {
   margin: 0 auto;
   justify-content: space-evenly;
   border: solid #102018 1px;
-  width: 800px;
-  height: 450px;
+  width: 700px;
+  height: 253px;
   flex-wrap: wrap;
   position: absolute;
   top: 50%;

@@ -1,17 +1,28 @@
 <template>
   <div class="character">
-    Snake
+    <v-img
+      :src="charImg"
+      height="100%"
+    />
   </div>
 </template>
 
 <script>
-export default {}
+export default {
+  props: {
+    charImg: {
+      type: String,
+      default: ''
+    }
+  }
+}
 </script>
 
 <style lang="scss" scoped>
 .character {
   height: 250px;
   width: 150px;
-  background-color: #307850;
+  z-index: 10;
+  // background-color: #307850;
 }
 </style>

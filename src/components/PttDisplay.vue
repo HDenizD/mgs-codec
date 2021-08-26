@@ -18,7 +18,7 @@ export default {}
 .ptt-display {
   background-color: #000000;
   width: 350px;
-  height: 250px;
+  height: 238px;
   .btn-ptt {
     left: 50%;
     transform: translateX(-50%);
