@@ -35,7 +35,7 @@ export default {
   display: flex;
   margin: 0 auto;
   justify-content: space-evenly;
-  border: solid #102018 1px;
+  border: solid #102018 2px;
   width: 700px;
   height: 253px;
   flex-wrap: wrap;
