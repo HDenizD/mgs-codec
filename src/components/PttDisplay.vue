@@ -45,7 +45,7 @@ export default {}
     border-top: solid #102018 2px;
     border-bottom: solid #102018 2px;
     width: 90%;
-    height: 180px;
+    height: 177px;
   }
 }
 </style>
