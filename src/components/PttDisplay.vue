@@ -3,22 +3,20 @@
     <v-btn
       tile
       color="#101818"
-      class="btn-ptt"
+      class="ptt-btn btn"
     >
-      <span class="btn-label ptt">PTT</span>
+      <span class="btn-label">PTT</span>
     </v-btn>
     <div class="display mx-auto">
       content
     </div>
-    <div class="btn-wrapper">
-      <v-btn
-        tile
-        color="#101818"
-        class="btn-ptt"
-      >
-        <span class="btn-label ptt">MEMORY</span>
-      </v-btn>
-    </div>
+    <v-btn
+      tile
+      color="#101818"
+      class="memory-btn btn"
+    >
+      <span class="btn-label">MEMORY</span>
+    </v-btn>
   </div>
 </template>
 
@@ -31,21 +29,35 @@ export default {}
   background-color: #000000;
   width: 350px;
   height: 238px;
-  .btn-ptt {
+  .ptt-btn {
+    position: relative;
+    top: -2px;
+  }
+  .memory-btn {
+    position: relative;
+    bottom: 6px;
+  }
+  .btn {
+    -webkit-box-shadow: 0px 0px 0px 8px #000000;
+    box-shadow: 0px 0px 0px 8px #000000;
+    z-index: 2;
+    height: 24px !important;
     left: 50%;
     transform: translateX(-50%);
-    width: 200px;
-    .ptt {
-      font-size: 35px;
+    width: 160px;
+    .btn-label {
+      font-size: 22px;
       color: #98f8d0;
       letter-spacing: 5px;
     }
   }
   .display {
+    position: relative;
     border-top: solid #102018 2px;
     border-bottom: solid #102018 2px;
-    width: 90%;
-    height: 177px;
+    width: 95%;
+    height: 207px;
+    top: -4px;
   }
 }
 </style>
