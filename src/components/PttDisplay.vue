@@ -8,38 +8,7 @@
       <span class="btn-label">PTT</span>
     </v-btn>
     <div class="display mx-auto">
-      <v-card
-        class="my-5 d-flex radio justify-space-between"
-        tile
-        color="black"
-        dark
-        height="80%"
-      >
-        <v-btn
-          class="left-arrow arrow align-self-center"
-          plain
-          tile
-        >
-          <v-icon
-            class="icon"
-            style="transform: rotate(180deg)"
-          >
-            mdi-play
-          </v-icon>
-        </v-btn>
-        <div class="radio-display">
-          radio
-        </div>
-        <v-btn
-          class="right-arrow arrow align-self-center"
-          tile
-          plain
-        >
-          <v-icon class="icon">
-            mdi-play
-          </v-icon>
-        </v-btn>
-      </v-card>
+      <radio-display />
     </div>
     <v-btn
       tile
@@ -52,7 +21,12 @@
 </template>
 
 <script>
-export default {}
+import RadioDisplay from '@/components/RadioDisplay'
+export default {
+  components: {
+    RadioDisplay
+  }
+}
 </script>
 
 <style lang="scss" scoped>
@@ -93,21 +67,6 @@ export default {}
     width: 100%;
     height: 207px;
     top: -4px;
-    .radio {
-      .arrow {
-        background-color: $mgs-dark-btn-green !important;
-        height: 30px;
-        min-width: 60px;
-        padding: 0;
-        .icon {
-          color: $mgs-mid-green;
-          font-size: 32px;
-        }
-      }
-      .arrow:hover .icon {
-        color: $mgs-light-green;
-      }
-    }
   }
 }
 </style>
