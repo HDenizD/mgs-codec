@@ -32,8 +32,9 @@
         <v-sheet
           v-for="(bar, index) in radioGraphBars"
           :key="index"
+          :class="bar.active ? 'bar-active' : 'bar-inactive'"
           class="bar"
-          height="17.2px"
+          height="15px"
         />
       </div>
     </v-sheet>
@@ -63,7 +64,9 @@ export default {
   },
   created() {
     for (let index = 0; index < 9; index++) {
-      this.radioGraphBars.push({ active: false })
+      // this.radioGraphBars.push({ active: true })
+      if (index > 1) this.radioGraphBars.push({ active: true })
+      else this.radioGraphBars.push({ active: false })
     }
   }
 }
@@ -97,18 +100,26 @@ export default {
       height: 85%;
       border-top-left-radius: 140px;
       .freq {
-        bottom: -10px;
-        left: 32px;
-        font-size: 50px;
+        font-family: 'digital-7';
+        bottom: -25px;
+        left: 24px;
+        font-size: 67px;
+        letter-spacing: 2px;
         position: absolute;
         .freq-small {
-          font-size: 35px;
+          font-size: 50px;
         }
       }
     }
     .radio-graph-bars {
       .bar {
+        margin: 2px 0;
+      }
+      .bar-active {
         background-color: $mgs-light-green;
+      }
+      .bar-inactive {
+        background-color: $mgs-mid-green;
       }
     }
   }

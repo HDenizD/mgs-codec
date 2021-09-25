@@ -1,6 +1,20 @@
-# mgs-codec
+# Metal Gear Solid Interactive Codec :iphone:
+![Preview Screenshot](public/app-preview.png)
 
-## Project setup
+### Live 
+In Progress...
+
+---
+
+### :computer: Core - Technologies:
+* [node: v14.15.0](https://nodejs.org/de/download/)
+* [npm: 6.14.8](https://nodejs.org/de/download/)
+* [vue/cli: 4.5.12](https://cli.vuejs.org/)
+* [eslint/eslint-plugin-vue](https://github.com/vuejs/eslint-plugin-vue)
+* [vuetify](https://vuetifyjs.com/en/)
+* [express.js](https://expressjs.com/)
+
+## :construction: Project setup
 ```
 npm install
 ```
