@@ -14,6 +14,10 @@ In Progress...
 * [vuetify](https://vuetifyjs.com/en/)
 * [express.js](https://expressjs.com/)
 
+### :heart: a big thank you for a awesome childhood:
+* [Hideo Kojima](https://en.wikipedia.org/wiki/Hideo_Kojima)
+* [Konami](https://en.wikipedia.org/wiki/Konami)
+
 ## :construction: Project setup
 ```
 npm install
