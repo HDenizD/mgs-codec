@@ -8,7 +8,20 @@
       <span class="btn-label">PTT</span>
     </v-btn>
     <div class="display mx-auto">
-      content
+      <v-card
+        class="my-5"
+        tile
+        color="black"
+        dark
+        height="80%"
+      >
+        display
+        <v-sheet
+          color="green"
+          height="20px"
+          width="20px"
+        />
+      </v-card>
     </div>
     <v-btn
       tile
@@ -47,14 +60,14 @@ export default {}
     width: 160px;
     .btn-label {
       font-size: 22px;
-      color: #98f8d0;
+      color: $mgs-light-green;
       letter-spacing: 5px;
     }
   }
   .display {
     position: relative;
-    border-top: solid #102018 2px;
-    border-bottom: solid #102018 2px;
+    border-top: solid $mgs-dark-green 2px;
+    border-bottom: solid $mgs-dark-green 2px;
     width: 95%;
     height: 207px;
     top: -4px;

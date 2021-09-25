@@ -32,10 +32,11 @@ export default {
 
 <style lang="scss" scoped>
 .codec {
+  zoom: 130%;
   display: flex;
   margin: 0 auto;
   justify-content: space-evenly;
-  border: solid #102018 2px;
+  border: solid $mgs-dark-green 2px;
   width: 700px;
   height: 253px;
   flex-wrap: wrap;

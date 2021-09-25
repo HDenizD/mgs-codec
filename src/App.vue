@@ -17,6 +17,9 @@ export default {
 }
 </script>
 <style lang="scss">
+html {
+  overflow-y: auto;
+}
 .app {
   background-color: #000000 !important;
   color: #ffffff !important;
