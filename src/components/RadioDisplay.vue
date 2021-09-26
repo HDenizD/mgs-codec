@@ -94,9 +94,9 @@ export default {
     background-color: $mgs-dark-green;
     .radio-display {
       -webkit-box-shadow: 0px 10px 0px -5px #000000, 0px -10px 0px -5px #000000,
-        -16px 0px 0px 3px #000000, 16px 0px 0px 3px #000000;
+        -10px 0px 0px 3px #000000, 16px 0px 0px 3px #000000;
       box-shadow: 0px 10px 0px -5px #000000, 0px -10px 0px -5px #000000,
-        -16px 0px 0px 3px #000000, 16px 0px 0px 3px #000000;
+        -10px 0px 0px 3px #000000, 10px 0px 0px 3px #000000;
       position: relative;
       top: 7px;
       background-color: $mgs-dark-green;
