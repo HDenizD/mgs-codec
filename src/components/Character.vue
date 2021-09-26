@@ -1,8 +1,9 @@
 <template>
-  <div class="character crt">
+  <div class="character">
     <v-img
       :src="charImg"
       height="100%"
+      class="crt"
     />
   </div>
 </template>
@@ -105,6 +106,6 @@ export default {
   opacity: 0;
   z-index: 2;
   pointer-events: none;
-  animation: flicker 0.15s infinite;
+  animation: flicker 0.3s infinite;
 }
 </style>
