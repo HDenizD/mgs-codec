@@ -31,6 +31,9 @@
         class="radio-display"
       >
         <div class="radio-freq">
+          <span
+            class="freq freq-shadow"
+          ><span class="freq-small">00</span>0.00</span>
           <span class="freq"><span class="freq-small">14</span>0.85</span>
         </div>
         <div class="radio-graph-bars pa-1">
@@ -113,14 +116,18 @@ export default {
         border-top-left-radius: 140px;
         .freq {
           font-family: 'digital-7';
-          bottom: -25px;
-          left: 21px;
-          font-size: 67px;
+          bottom: -21px;
+          left: 32px;
+          font-size: 60px;
           letter-spacing: 2px;
           position: absolute;
           .freq-small {
             font-size: 50px;
           }
+        }
+        .freq-shadow {
+          color: $mgs-mid-green;
+          left: 16.5px;
         }
       }
       .radio-graph-bars {
