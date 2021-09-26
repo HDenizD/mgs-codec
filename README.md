@@ -1,4 +1,4 @@
-# Metal Gear Solid Interactive Codec :iphone:
+# Metal Gear Solid - Interactive Codec :iphone:
 ![Preview Screenshot](public/app-preview.png)
 
 ### Live 
