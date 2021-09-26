@@ -20,6 +20,8 @@ export default {
 
 <style lang="scss" scoped>
 .character {
+  -webkit-box-shadow: 0px 0px 12px 0px #237c57;
+  box-shadow: 0px 0px 12px 0px #237c57;
   height: 250px;
   width: 150px;
   z-index: 10;
