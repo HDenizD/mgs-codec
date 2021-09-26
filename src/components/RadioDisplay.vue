@@ -114,7 +114,7 @@ export default {
         .freq {
           font-family: 'digital-7';
           bottom: -25px;
-          left: 24px;
+          left: 21px;
           font-size: 67px;
           letter-spacing: 2px;
           position: absolute;
