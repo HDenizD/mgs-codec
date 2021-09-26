@@ -23,20 +23,26 @@
     <v-sheet
       width="90%"
       height="100%"
-      class="radio-display mx-3"
+      class="radio-display-frame"
     >
-      <div class="radio-freq">
-        <span class="freq"><span class="freq-small">14</span>0.85</span>
-      </div>
-      <div class="radio-graph-bars pa-1">
-        <v-sheet
-          v-for="(bar, index) in radioGraphBars"
-          :key="index"
-          :class="bar.active ? 'bar-active' : 'bar-inactive'"
-          class="bar"
-          height="15px"
-        />
-      </div>
+      <v-sheet
+        width="205px"
+        height="149px"
+        class="radio-display"
+      >
+        <div class="radio-freq">
+          <span class="freq"><span class="freq-small">14</span>0.85</span>
+        </div>
+        <div class="radio-graph-bars pa-1">
+          <v-sheet
+            v-for="(bar, index) in radioGraphBars"
+            :key="index"
+            :class="bar.active ? 'bar-active' : 'bar-inactive'"
+            class="bar"
+            height="13.4px"
+          />
+        </div>
+      </v-sheet>
     </v-sheet>
     <v-btn
       class="right-arrow arrow pa-0 align-self-center"
@@ -84,42 +90,49 @@ export default {
   .arrow:hover .icon {
     color: $mgs-light-green;
   }
-  .radio-display {
-    position: relative;
-    width: 100%;
+  .radio-display-frame {
     background-color: $mgs-dark-green;
-    color: $mgs-light-green;
-    margin: 0 auto;
-    .radio-freq {
-      position: absolute;
-      z-index: 10;
+    .radio-display {
+      -webkit-box-shadow: 0px 10px 0px -5px #000000, 0px -10px 0px -5px #000000,
+        -16px 0px 0px 3px #000000, 16px 0px 0px 3px #000000;
+      box-shadow: 0px 10px 0px -5px #000000, 0px -10px 0px -5px #000000,
+        -16px 0px 0px 3px #000000, 16px 0px 0px 3px #000000;
+      position: relative;
+      top: 7px;
       background-color: $mgs-dark-green;
-      bottom: 3px;
-      right: 0px;
-      width: 85%;
-      height: 85%;
-      border-top-left-radius: 140px;
-      .freq {
-        font-family: 'digital-7';
-        bottom: -25px;
-        left: 24px;
-        font-size: 67px;
-        letter-spacing: 2px;
+      color: $mgs-light-green;
+      margin: 0 auto;
+      .radio-freq {
         position: absolute;
-        .freq-small {
-          font-size: 50px;
+        z-index: 10;
+        background-color: $mgs-dark-green;
+        bottom: 3px;
+        right: 0px;
+        width: 85%;
+        height: 85%;
+        border-top-left-radius: 140px;
+        .freq {
+          font-family: 'digital-7';
+          bottom: -25px;
+          left: 24px;
+          font-size: 67px;
+          letter-spacing: 2px;
+          position: absolute;
+          .freq-small {
+            font-size: 50px;
+          }
         }
       }
-    }
-    .radio-graph-bars {
-      .bar {
-        margin: 2px 0;
-      }
-      .bar-active {
-        background-color: $mgs-light-green;
-      }
-      .bar-inactive {
-        background-color: $mgs-mid-green;
+      .radio-graph-bars {
+        .bar {
+          margin: 2px 0;
+        }
+        .bar-active {
+          background-color: $mgs-light-green;
+        }
+        .bar-inactive {
+          background-color: $mgs-mid-green;
+        }
       }
     }
   }
