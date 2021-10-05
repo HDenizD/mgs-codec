@@ -2,7 +2,7 @@
 ![Preview Screenshot](public/app-preview.png)
 
 ### Live 
-In Progress...
+Still in Progress... (https://mgs-codec.herokuapp.com/)
 
 ---
 
