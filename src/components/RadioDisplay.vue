@@ -11,6 +11,7 @@
       height="30px"
       plain
       tile
+      @click="freqControll('dec')"
     >
       <v-icon
         class="icon"
@@ -34,7 +35,9 @@
           <span
             class="freq freq-shadow"
           ><span class="freq-small">00</span>0.00</span>
-          <span class="freq"><span class="freq-small">14</span>0.85</span>
+          <span
+            class="freq"
+          ><span class="freq-small">{{ radioFreqSmall }}</span>{{ radioFreqBig }}</span>
         </div>
         <div class="radio-graph-bars pa-1">
           <v-sheet
@@ -53,7 +56,9 @@
       height="30px"
       tile
       plain
+      @click="freqControll('inc')"
     >
+      <!-- @click="freqControll('inc')" -->
       <v-icon
         class="icon"
         size="32px"
@@ -68,7 +73,20 @@
 export default {
   data() {
     return {
+      radioFreq: 14085,
       radioGraphBars: []
+    }
+  },
+  computed: {
+    radioFreqSmall: function() {
+      return String(this.radioFreq).slice(0, 2)
+    },
+    radioFreqBig: function() {
+      let withDot = String(this.radioFreq).slice(2)
+      withDot = withDot.split('')
+      withDot.splice(1, 0, '.')
+      withDot = withDot.join('')
+      return withDot
     }
   },
   created() {
@@ -76,6 +94,12 @@ export default {
       // this.radioGraphBars.push({ active: true })
       if (index > 1) this.radioGraphBars.push({ active: true })
       else this.radioGraphBars.push({ active: false })
+    }
+  },
+  methods: {
+    freqControll(incOrDec) {
+      if (incOrDec === 'inc') this.radioFreq++
+      if (incOrDec === 'dec') this.radioFreq--
     }
   }
 }
