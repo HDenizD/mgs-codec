@@ -32,12 +32,11 @@
         class="radio-display"
       >
         <div class="radio-freq">
-          <span
-            class="freq freq-shadow"
-          ><span class="freq-small">00</span>0.00</span>
+          <span class="freq freq-shadow">
+            <span class="freq-small">00</span>0.00</span>
           <span
             class="freq"
-          ><span class="freq-small">{{ radioFreqSmall }}</span>{{ radioFreqBig }}</span>
+          ><span class="freq-small">{{ radioFreqSmall }}</span><span>{{ radioFreqBig }}</span></span>
         </div>
         <div class="radio-graph-bars pa-1">
           <v-sheet
